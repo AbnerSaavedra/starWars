@@ -1,0 +1,11 @@
+<ul class="list-group">
+  
+    <li 
+      *ngFor="let character of characters"
+      class="list-group-item">
+      <!-- <img src="" alt=""> -->
+      <a routerLink="/characterDetail/{{getCharacterId(character.url)}}">
+        {{ character.name }}
+      </a>
+    </li>
+</ul>
